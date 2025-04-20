@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.personal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.input-data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-data > input {
+  font-size: 15px;
+  height: 30px;
+  padding: 5px 10px; 
+  border-radius: 5px;
+  border-style: solid;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+
+.drop-down {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.drop-down > img {
+  height: 20px;
+}
+
+/* this is used to hide the dropdown menu */
+.hide {
+  overflow: hidden;
+  max-height: 0;
+  gap: 0;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
