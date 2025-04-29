@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  font-family: "Roboto", Roboto mono, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: "Roman Serif";
+  src: local("Roman Serif"),
+    url("../fonts/cmunrm.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roman Serif Bold";
+  src: local("Roman Serif Bold"),
+    url("../fonts/cmunbx.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  font-family: "Roman Serif", "Roboto", Roboto mono, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
+  /* disables the global scrollbar */
+  overflow: hidden;
 }
 
 * {
   /* border: 1px red solid;  */
 }
-
 
 
 

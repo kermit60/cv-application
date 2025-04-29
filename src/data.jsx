@@ -8,27 +8,28 @@ export const personalObject = {
   github: "github.com/jake"
 }
 
-export const skillsTemp = {
-  language: [{id: nanoid(), name: "JavaScript"}, 
-             {id: nanoid(), name: "Python"}, 
-             {id: nanoid(), name: "C/C++"}, 
-             {id: nanoid(), name: "SQL (Postgres)"}
-            ],
-  frameworks: [{id: nanoid(), name: "React"}, 
-               {id: nanoid(), name: "Node.js"}, 
-               {id: nanoid(), name: "Flash"}, 
-               {id: nanoid(), name: "WordPress"}
-              ],
-  tools: [{id: nanoid(), name: "Git"}, 
-          {id: nanoid(), name: "Docker"}, 
-          {id: nanoid(), name: "Google Cloud Platform"}, 
-          {id: nanoid(), name: "Material-UI"}
-          ],
-  library: [{id: nanoid(), name: "pandas"}, 
-            {id: nanoid(), name: "NumPy"}, 
-            {id: nanoid(), name: "Matplotlib"}
-          ]
-}
+export const skillsTemp = [
+  {
+    id: nanoid(),
+    skillCategory: "language",
+    skillContent: "JavaScript, Typescript, Python, C/C++, SQL, HTML, CSS",
+  },
+  {
+    id: nanoid(),
+    skillCategory: "frameworks",
+    skillContent: "React, Node.js, Express.js, Next.js",
+  },
+  {
+    id: nanoid(),
+    skillCategory: "tools",
+    skillContent: "Git, Github, Visual Studio Code, Postman",
+  },
+  {
+    id: nanoid(),
+    skillCategory: "library",
+    skillContent: "Axios, React Router, Redux, Tailwind CSS, Bootstrap" 
+  }
+]
 
 export const educationTemp = [{
   id: nanoid(),

@@ -12,7 +12,7 @@ export default function Personal({ info, setInfo }) {
         <h1>Personal Information</h1>
         <img src={OpenIcon} alt="" className={visible ? "arrow": ""}/>
       </div>
-      <form className={visible ? "personal-form": "hide"}>
+      <form className={`personal-form ${visible ? "": "hide"}`}>
         <div className="input-data">
           <label>Full Name: </label>
           <input 
