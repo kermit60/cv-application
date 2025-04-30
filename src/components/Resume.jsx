@@ -12,10 +12,10 @@ export default function Resume({
       <section className='info'>
         <h1>{info.name}</h1>
         <div className='links'>
-          <div className='phone-number'>{info.phoneNumber}</div>
-          <div className='email'>{info.email}</div>
-          <a href={info.linkedin} className='link'>{info.linkedin}</a>
-          <a href={info.github} className='link'>{info.github}</a>
+          <div className='phone-number'>{info.phoneNumber}</div>| 
+          <div className='email'>{info.email}</div> | 
+          <a href={info.linkedin} className='link'>{info.linkedin}</a> | 
+          <a href={info.github} className='link'>{info.github}</a> | 
         </div>
       </section>
       <section className='skills-section'>

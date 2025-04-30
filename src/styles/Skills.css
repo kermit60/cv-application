@@ -44,6 +44,18 @@
 }
 
 .delete-button {
-  border: none;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+  max-width: 150px;
+}
+
+.button {
+  transition: transform 0.2s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-5px);
 }
