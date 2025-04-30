@@ -1,4 +1,4 @@
-import '../styles/SkillsSection.css';
+import '../styles/section.css';
 import OpenIcon from '../assets/open.svg';
 import Skills from './Skills';
 import { useState } from 'react';
@@ -17,7 +17,7 @@ export default function SkillsSection({ skills, setSkills }) {
   }
 
   return (
-    <section className="personal">
+    <section className="section-layout">
       <div className="drop-down" onClick={() => setVisible(!visible)}>
         <h1>Technical Skills</h1>
         <img src={OpenIcon} alt="" className={visible ? "arrow": ""}/>

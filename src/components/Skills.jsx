@@ -45,12 +45,14 @@ export default function Skills( {id, skills, skillCategory, skillContent, setSki
           type="text" 
           value={skillCategory}
           onChange={(e) => changeCategory(e.target.value)}
+          placeholder='Frameworks'
         />
         <label className='skill-category'>Skills</label>
           <input 
             type="text" 
             value={skillContent}
             onChange={(e) => changeContent(e.target.value)}
+            placeholder='React, Node.js, Express.js, Next.js'
           />
         <button type="button" className='button delete-button' onClick={() => deleteSkill()}>- Delete</button>
       </form>

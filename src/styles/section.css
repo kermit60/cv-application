@@ -1,4 +1,4 @@
-.personal {
+.section-layout {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -14,8 +14,8 @@ h1 {
 .personal-form {
   display: flex;
   flex-direction: column;
-  max-height: 1000px;
-  transition: max-height .5s ease-out;
+  max-height: 2000px;
+  transition: max-height .5s ease-in;
   gap: 20px;
 }
 
@@ -79,5 +79,5 @@ button:focus {
 }
 
 .add-button {
-  margin-top: 10px;
+  margin-top: 15px;
 }
