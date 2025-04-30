@@ -11,22 +11,22 @@ export const personalObject = {
 export const skillsTemp = [
   {
     id: nanoid(),
-    skillCategory: "language",
+    skillCategory: "Language",
     skillContent: "JavaScript, Typescript, Python, C/C++, SQL, HTML, CSS",
   },
   {
     id: nanoid(),
-    skillCategory: "frameworks",
+    skillCategory: "Frameworks",
     skillContent: "React, Node.js, Express.js, Next.js",
   },
   {
     id: nanoid(),
-    skillCategory: "tools",
+    skillCategory: "Tools",
     skillContent: "Git, Github, Visual Studio Code, Postman",
   },
   {
     id: nanoid(),
-    skillCategory: "library",
+    skillCategory: "Library",
     skillContent: "Axios, React Router, Redux, Tailwind CSS, Bootstrap" 
   }
 ]

@@ -24,7 +24,7 @@ export default function Resume({
           {
             skills.map((skill) => {
               return  <div key={skill.id} className="flex">
-                <span className='skill-category'>{skill.skillCategory}</span>: {skill.skillContent}
+                <span className='skill-resume-category'>{skill.skillCategory}</span>: {skill.skillContent}
               </div>
             })     
           }

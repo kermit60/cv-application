@@ -1,0 +1,49 @@
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills-form {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  transition: max-height .3s ease-in;
+  gap: 7px;
+}
+
+.skills-heading {
+  font-weight: 400;
+  display: flex;
+  gap: 10px;
+}
+
+.skills-heading {
+  padding-bottom: 2px;
+}
+
+.drop-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.skills-heading > img {
+  height: 20px;
+  cursor: pointer;
+  text-align: start;
+}
+
+.hide {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.delete-button {
+  border: none;
+  
+}

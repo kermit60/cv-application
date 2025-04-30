@@ -19,7 +19,7 @@ export default function SkillsSection({ skills, setSkills }) {
         })}
         
       </div>
-      
+      <button type='button'>+ Add skill</button>
     </section>
   )
 }
