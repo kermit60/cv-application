@@ -37,7 +37,7 @@
 /* technical skills section */
 /* Same for every section */
 .skills-content {
-  padding: 5px 0 0 15px;
+  padding: 5px 15px;
 }
 
 .technical-skills {
@@ -50,4 +50,39 @@
 
 .skill-resume-category {
   font-family: "Roman Serif Bold";
+}
+
+/* education section */
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-family: "Roman Serif Bold"; 
+}
+
+.italics {
+  font-family: "Roman Serif Italics";
+}
+
+/* Experience section */
+
+/* adding in • bullet before list when font doesn't have it  */
+li::before {
+  content: "•";
+  color: black;
+  font-size: 0.8em;
+  margin-right: 8px;
+}
+
+li {
+  display: flex;
+  padding-left: 20px;
 }

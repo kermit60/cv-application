@@ -1,0 +1,22 @@
+.input {
+  font-size: 15px;
+  min-height: 100px;
+  min-width: 300px;
+  padding: 5px 10px; 
+  border-radius: 5px;
+  border-style: solid;
+  overflow-y: auto;
+  resize: none;
+}
+
+.description-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-section > button{
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+}

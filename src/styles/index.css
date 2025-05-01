@@ -14,6 +14,13 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Roman Serif Italics";
+  src: local("Roman Serif Italics"),
+    url("../fonts/cmunti.ttf") format("truetype");
+  font-weight: italic;
+}
+
 * {
   font-family: "Roman Serif", "Roboto", Roboto mono, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;

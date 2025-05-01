@@ -2,6 +2,7 @@ import '../styles/sidebar.css'
 import Personal from './Personal'
 import SkillsSection from './SkillsSection'
 import EducationSection from './EducationSection'
+import ExperienceSection from './ExperienceSection'
 
 export default function Sidebar({
   info, setInfo,
@@ -14,9 +15,9 @@ export default function Sidebar({
     <div className="sidebar">
       <Personal info={info} setInfo={setInfo}/>
       <SkillsSection skills={skills} setSkills={setSkills}/>
+      <ExperienceSection experiences={experiences} setExperience={setExperience}/>
+
       <EducationSection education={education} setEducation={setEducation}/>
-      <Personal info={info} setInfo={setInfo}/>
-      
 
     </div>
   )

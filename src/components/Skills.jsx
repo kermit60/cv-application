@@ -5,27 +5,18 @@ import OpenIcon from '../assets/open.svg';
 export default function Skills( {id, skills, skillCategory, skillContent, setSkills} ) {
   const [visible, setVisible] = useState(true);
   const deepCopy = [...skills];
-  const changeCategory = (newCategory) => {
-    // const deepCopy = [...skills];
+
+  const changeCategory = (newCategory, category) => {
     for (let i = 0; i < deepCopy.length; ++i) {
       if (deepCopy[i].id === id) {
-        deepCopy[i]['skillCategory'] = newCategory;
+        deepCopy[i][category] = newCategory;
       } 
     }
     setSkills(deepCopy);
   }
-  const changeContent = (newContent) => {
-    // const deepCopy = [...skills]
-    for (let i = 0; i < deepCopy.length; ++i) {
-      if (deepCopy[i].id === id) {
-        deepCopy[i]['skillContent'] = newContent;
-      } 
-    } 
-    setSkills(deepCopy);
-  }
+ 
   // deletes skill by getting the id from array and removing it using splice
   const deleteSkill = () => {
-    // const deepCopy = [...skills];
     for (let i = 0; i < skills.length; ++i) {
       if (skills[i].id === id) {
         deepCopy.splice(i, 1);
@@ -44,14 +35,14 @@ export default function Skills( {id, skills, skillCategory, skillContent, setSki
         <input 
           type="text" 
           value={skillCategory}
-          onChange={(e) => changeCategory(e.target.value)}
+          onChange={(e) => changeCategory(e.target.value, "skillCategory")}
           placeholder='Frameworks'
         />
         <label className='skill-category'>Skills</label>
           <input 
             type="text" 
             value={skillContent}
-            onChange={(e) => changeContent(e.target.value)}
+            onChange={(e) => changeCategory(e.target.value, "skillContent")}
             placeholder='React, Node.js, Express.js, Next.js'
           />
         <button type="button" className='button delete-button' onClick={() => deleteSkill()}>- Delete</button>

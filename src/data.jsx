@@ -41,13 +41,20 @@ export const educationTemp = [{
 
 export const experiencesTemp = [{
   id: nanoid(),
-  name: "Undergraduate Research Assistant",
-  location: "University of Waterloo",
+  title: "Undergraduate Research Assistant",
+  company: "University of Waterloo",
+  location: "Kitchener, Waterloo",
   date: "June 2020 - Present",
-  descriptions: [{
-    id: nanoid(),
-    description: "Developed a REST API using fast API and Postgres SQL"
-  }]
+  descriptions: [
+    {
+      id: nanoid(),
+      description: "Developed a REST API using fast API and Postgres SQL"
+    },
+    {
+      id: nanoid(),
+      description: "Developed a full-stack web application using Flash, React, PostgreSQL and Docker to analyze Github data"
+    }
+  ]
 }]
 
 export const projectsTemp = [{

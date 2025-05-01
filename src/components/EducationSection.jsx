@@ -7,12 +7,14 @@ import { nanoid } from 'nanoid';
 export default function EducationSection( { education, setEducation }) {
   const [visible, setVisible] = useState(true);
   const addEducation = () => {
-    const newSkill = {
+    const newEducation = {
       id: nanoid(),
-      skillCategory: "",
-      skillContent: ""
+      university: "",
+      location: "",
+      name: "",
+      date: "" 
     }
-    setSkills([...skills, newSkill])
+    setEducation([...education, newEducation])
   }
 
 
@@ -27,15 +29,16 @@ export default function EducationSection( { education, setEducation }) {
           return <Education 
             key={e.id}
             id={e.id}
-            education={education}
             university={e.university}
+            education={education}
             location={e.location}
             name={e.name}
             date={e.date}
+            setEducation={setEducation}
           />
         })}
       </div>
-      <button type='button' className='button add-button' onClick={() => addSkill()}>+ Add Education</button>
+      <button type='button' className='button add-button' onClick={() => addEducation()}>+ Add Education</button>
     </section>
   )
 }
