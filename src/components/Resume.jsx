@@ -61,6 +61,31 @@ export default function Resume({
       </section>
 
       <section className='skills-section'>
+        <h1 className='technical-skills'>PROJECTS</h1>
+        <div className='skills-content education'>
+          {
+            projects.map(project => {
+              return ( 
+                <section key={project.id}>
+                  <div className='education-content bold'>
+                    <div className='bold'>{project.name} | <span className='italics'>{project.frameworks}</span></div>
+                    <span>{project.date}</span>
+                  </div>
+                  <ul className='responsibility'>
+                    {
+                      project.descriptions.map(element => {
+                        return <li key={element.id}>{element.description}</li>
+                      })
+                    }
+                  </ul>
+                </section>
+              )
+            })     
+          }
+        </div>
+      </section>
+
+      <section className='skills-section'>
         <h1 className='technical-skills'>EDUCATION</h1>
         <div className='skills-content education'>
           {
