@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 import OpenIcon from '../assets/open.svg';
 import '../styles/Skills.css'
 import '../styles/notes-section.css'
@@ -59,6 +60,15 @@ export default function Experience({
     } 
   }
 
+  const addResponsibility = () => {
+    for (let i = 0; i < deepCopy.length; ++i) {
+      if (deepCopy[i].id === id) {
+        deepCopy[i]['descriptions'].push({id: nanoid(), description: ""}) 
+        setExperience(deepCopy);
+      }
+    }
+  }
+
   return (
     <div>
       <div className='skills-heading' onClick={() => setVisible(!visible)}>
@@ -105,11 +115,12 @@ export default function Experience({
                 onChange={(e) => changeResponsibility(responsibility.id, e.target.value)}
                 placeholder='Developed a full-stack web application using Flash, React, PostgreSQL and Docker to analyze Github data'
               />
+
               <button type='button' className='button' onClick={() => deleteResponsibility(responsibility.id)}>–</button>
             </div>
           })
         }
-        
+        <button type="button" className='button add' onClick={() => addResponsibility()}>+ Add Responsibility</button>
         <button type="button" className='button delete-button' onClick={() => deleteExperiences(id)}>- Delete</button>
       </form>
     </div>
