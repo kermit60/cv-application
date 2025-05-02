@@ -1,5 +1,14 @@
 .app {
   display: flex;
+  height: 100vh;
   background-color: cadetblue;
   padding: 10px;
+}
+
+@media print {
+  .app {
+    padding: 0;
+    height: auto;
+  }
+
 }

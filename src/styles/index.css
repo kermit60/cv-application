@@ -27,11 +27,14 @@
   padding: 0;
   /* disables the global scrollbar */
   overflow: hidden;
+  /* border: solid 2px red; */
 }
 
-* {
-  /* border: 1px red solid;  */
+/* changing this for when page changes or when printing */
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
 }
-
 
 

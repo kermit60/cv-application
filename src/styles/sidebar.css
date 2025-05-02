@@ -1,9 +1,29 @@
 .sidebar {
-  max-width: 750px;
-  min-width: 500px;
+  max-width: 850px;
+  min-width: 600px;
   /* need static height to see overflow */
   height: 95vh;
   overflow-y: auto;
+  margin-right: 20px;
   padding: 5px 0px 5px 10px;
 }
 
+.download-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.download-button > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  gap: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.download {
+  max-height: 20px;
+}
