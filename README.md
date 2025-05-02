@@ -1,10 +1,10 @@
 # CV-generator
 ## **Description**
-A modern and customizable Resume Generator built with React. This app allows users to dynamically fill out their personal, education, and work details, preview a professional resume in real-time, and download it as a PDF.
+EasyQuickCV is a modern and customizable resume Generator built with React. This app allows users to dynamically fill out their personal, education, and work details, preview a professional resume in real-time, and download it as a PDF.
 ## Live site screenshot
 ![Screenshot](./src/assets/cv-generator.png)
 ## **Installation**
-> A live deployment of this [`cv-application`](https://kermit60.github.io/todo-list/) project is available on Netlify.
+> A live deployment of this [`EasyQuickCV`](https://easyquickcv.netlify.app) project is available on Netlify.
 
 However, if you want to run the application and/or edit it's source code locally, feel free to:
 
