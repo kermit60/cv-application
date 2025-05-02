@@ -87,13 +87,14 @@
 
 /* adding in • bullet before list when font doesn't have it  */
 li::before {
+  position: absolute;
+  left: 20px;
   content: "•";
   color: black;
   font-size: 0.8em;
-  margin-right: 8px;
 }
 
 li {
-  display: flex;
-  padding-left: 20px;
+  position: relative;
+  padding-left: 2.2em;
 }
