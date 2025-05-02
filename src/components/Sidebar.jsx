@@ -29,7 +29,8 @@ export default function Sidebar({
     <div className="sidebar">
       <div className='download-button'>
         <button type='button' className='button' style={style} onClick={downloadCV}>
-          <img className='download' src={DownloadIcon} alt="Download Icon" /> Download CV
+        <svg className='download' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>download</title><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" /></svg>
+          Download CV
         </button>
       </div>
       <Personal info={info} setInfo={setInfo}/>
