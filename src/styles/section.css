@@ -1,86 +1,102 @@
 .section-layout {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  margin: 20px 20px;
-  padding: 25px 20px;
-  border-radius: 10px;
+  margin: 10px 4px;
+  padding: 18px;
+  border: 1px solid #dfe7ea;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 22px rgba(27, 47, 59, .04);
 }
 
-h1 {
-  font-weight: 400;
+.section-layout::before,
+.personal::before {
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 4px 4px 0;
+  background: #62a99e;
+  content: "";
 }
 
 .personal-form {
   display: flex;
   flex-direction: column;
-  max-height: 2000vh;
-  transition: max-height .5s ease-in;
-  padding-bottom: 10px;
-  border-bottom: solid 0.5px;
+  max-height: 2000px;
+  overflow: hidden;
   gap: 20px;
-}
-
-.input-data {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.input-data > input,
-.skills-form > input {
-  font-size: 15px;
-  height: 30px;
-  padding: 5px 10px; 
-  border-radius: 5px;
-  border-style: solid;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #edf1f3;
+  transition: max-height .22s ease-out;
 }
 
 .drop-down {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 2px 0 15px;
+  color: #23343e;
   cursor: pointer;
-  font-size: 18px;
-  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -.01em;
 }
 
 .drop-down > img {
-  height: 20px;
+  height: 18px;
 }
 
-/* this is used to hide the dropdown menu */
 .hide {
-  /* display: none; */
-  overflow: hidden;
   max-height: 0;
-  transition: max-height .4s ease-out;
+  overflow: hidden;
+  transition: max-height .18s ease-out;
+}
+
+.section-layout > .personal-form.hide {
+  display: none;
+  padding: 0;
+  border: 0;
 }
 
 .arrow {
   transform: rotate(180deg);
 }
 
-/* collective elements */
 .button {
-  border: none;
+  min-height: 38px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #327b74;
   color: white;
-  min-height: 45px;
-  background-color: cadetblue;
   cursor: pointer;
-  border-radius: 7px;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
 }
 
 .add-button {
   margin-top: 15px;
+  border-color: #b8d9d3;
+  background: #f5faf9;
+  color: #287168;
 }
 
+.button:hover {
+  background: #245c59;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.add-button:hover {
+  border-color: #245c59;
+}
+
+@media (max-width: 480px) {
+  .section-layout {
+    padding: 16px;
+  }
+}

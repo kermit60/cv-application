@@ -1,14 +1,114 @@
 .app {
   display: flex;
+  align-items: flex-start;
   height: 100vh;
-  background-color: cadetblue;
-  padding: 10px;
+  min-height: 100vh;
+  gap: 28px;
+  padding: 28px;
+  background: #eef2f6;
+}
+
+.app.editor-dark {
+  background: #111a1f;
+  color: #eef7f5;
+}
+
+.app.editor-dark .sidebar {
+  color: #eef7f5;
+}
+
+.app.editor-dark .section-layout,
+.app.editor-dark .personal {
+  color: #eef7f5;
+}
+
+.app.editor-dark .drop-down,
+.app.editor-dark .skills-heading {
+  color: #f0f8f6;
+}
+
+.app.editor-dark .input-data label,
+.app.editor-dark .skill-category {
+  color: #b7cfcc;
+}
+
+.app.editor-dark input,
+.app.editor-dark textarea {
+  color: #000;
+  caret-color: #9de0d4;
+}
+
+.app.editor-dark .button {
+  color: #f4fbfa;
+}
+
+.app.editor-dark .add-button,
+.app.editor-dark .add {
+  color: #b9e8de;
+}
+
+.app.editor-dark .delete-button,
+.app.editor-dark .description-section > .button {
+  color: #ffc0b8;
+}
+
+.splitter {
+  flex: 0 0 8px;
+  align-self: stretch;
+  min-height: 120px;
+  margin: 0 -12px;
+  border: 0;
+  background: transparent;
+  cursor: col-resize;
+  z-index: 2;
+}
+
+.splitter::after {
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: #d3dddf;
+  content: "";
+  transition: background .2s ease, width .2s ease;
+}
+
+.splitter:hover::after,
+.is-resizing .splitter::after {
+  width: 4px;
+  background: #327b74;
+}
+
+.is-resizing {
+  cursor: col-resize;
+  user-select: none;
+}
+
+@media (max-width: 1100px) {
+  .app {
+    gap: 18px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .app {
+    display: block;
+    height: auto;
+    padding: 12px;
+  }
+
+  .splitter {
+    display: none;
+  }
 }
 
 @media print {
   .app {
-    padding: 0;
+    display: block;
     height: auto;
+    padding: 0;
+    background: white;
   }
-
 }

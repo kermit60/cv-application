@@ -1,61 +1,121 @@
 .skill-category {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 9px;
 }
 
 .skills-form {
   display: flex;
   flex-direction: column;
-  max-height: 2000px;
-  transition: max-height .3s ease-in;
-  gap: 7px;
-}
-
-.skills-heading {
-  font-weight: 400;
-  display: flex;
+  max-height: 1800px;
+  overflow: hidden;
   gap: 10px;
+  padding: 12px 0 14px;
+  border-top: 1px solid #edf1f3;
+  transition: max-height .22s ease-out;
+}
+
+.skills-form + .skills-form {
+  margin-top: 4px;
+}
+
+.skills-form.hide {
+  display: none;
+  max-height: 0;
+  padding: 0;
+  border: 0;
 }
 
 .skills-heading {
-  padding-bottom: 2px;
-}
-
-.drop-down {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  padding-bottom: 2px;
+  color: #526570;
   cursor: pointer;
-  font-size: 18px;
-  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .01em;
 }
 
 .skills-heading > img {
-  height: 20px;
-  cursor: pointer;
-  text-align: start;
+  height: 18px;
 }
 
-.hide {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+.skills-form > input {
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #d7e0e5;
+  border-radius: 9px;
+  background: #fbfcfd;
+  font-size: 14px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.skills-form textarea {
+  min-height: 78px;
+  resize: vertical;
+  padding: 10px 12px;
+  border: 1px solid #d7e0e5;
+  border-radius: 9px;
+  background: #fbfcfd;
+  font: inherit;
+  font-size: 13px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.skills-form > input:hover,
+.skills-form textarea:hover,
+.input-data > input:hover {
+  border-color: #9ab9b5;
 }
 
 .delete-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  max-width: 150px;
   margin-top: 10px;
   padding: 5px 10px;
-  max-width: 150px;
+  border: 1px solid #f0c9c5;
+  background: #fff8f7;
+  color: #bc5b54;
 }
 
-.button {
-  transition: transform 0.2s ease-out;
+.add {
+  border: 1px solid #b8d9d3;
+  background: #f5faf9;
+  color: #287168;
 }
 
-.button:hover {
-  transform: translateY(-5px);
+.delete-button:hover {
+  border-color: #bc5b54;
+  background: #bc5b54;
+}
+
+.add:hover {
+  border-color: #287168;
+}
+
+.description-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.description-section .input {
+  flex: 1;
+}
+
+.description-section > .button {
+  min-width: 38px;
+  border: 1px solid #f0c9c5;
+  background: #fff8f7;
+  color: #bc5b54;
+}
+
+.description-section > .button:hover {
+  border-color: #bc5b54;
+  background: #bc5b54;
+  color: white;
 }

@@ -1,27 +1,28 @@
 .personal {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  margin: 20px 20px;
-  padding: 25px 20px;
-  border-radius: 10px;
-  
+  margin: 10px 4px;
+  padding: 18px;
+  border: 1px solid #dfe7ea;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 22px rgba(27, 47, 59, .04);
 }
 
 #personal {
   border: none;
 }
 
-h1 {
-  font-weight: 400;
-}
-
 .personal-form {
   display: flex;
   flex-direction: column;
   max-height: 1000px;
-  transition: max-height .5s ease-out;
+  overflow: hidden;
   gap: 15px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #edf1f3;
+  transition: max-height .22s ease-out;
 }
 
 .input-data {
@@ -31,42 +32,62 @@ h1 {
 }
 
 .input-data > input {
-  font-size: 15px;
-  height: 30px;
-  padding: 5px 10px; 
-  border-radius: 5px;
-  border-style: solid;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #d7e0e5;
+  border-radius: 9px;
+  background: #fbfcfd;
+  font-size: 14px;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+.input-data label, .skill-category {
+  color: #758391;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px;
+  border-color: #3a8980;
+  box-shadow: 0 0 0 3px rgba(58, 137, 128, .15);
 }
 
 .drop-down {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 0 16px;
+  color: #23343e;
   cursor: pointer;
-  font-size: 18px;
-  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -.01em;
 }
 
 .drop-down > img {
-  height: 20px;
+  height: 18px;
 }
 
-/* this is used to hide the dropdown menu */
 .hide {
-  /* display: none; */
-  overflow: hidden;
   max-height: 0;
-  transition: max-height .4s ease-out;
+  overflow: hidden;
+  transition: max-height .18s ease-out;
+}
+
+.personal .personal-form.hide {
+  display: none;
+  max-height: 0;
+  padding: 0;
+  border: 0;
 }
 
 .arrow {
   transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+  .personal {
+    padding: 16px;
+  }
 }
