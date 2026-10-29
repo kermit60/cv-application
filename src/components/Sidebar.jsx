@@ -82,8 +82,7 @@ export default function Sidebar({
       <header className="sidebar-header">
         <div className="brand-mark">CV</div>
         <div>
-          <p className="eyebrow">Workspace</p>
-          <h1 className="brand-name">ResumeForge</h1>
+          <h1 className="brand-name">EasyQuickCV</h1>
         </div>
         <button
           type="button"
@@ -96,9 +95,8 @@ export default function Sidebar({
       </header>
       <div className="parser-intro">
         <div>
-          <p className="eyebrow">Parsed resume</p>
-          <h2>Refine your story</h2>
-          <p>Review the extracted details, then shape them into a polished CV.</p>
+          <h2>Build your story</h2>
+          <p>Add your experience, skills, and education to create a polished CV.</p>
         </div>
       </div>
       <div className='download-button'>
